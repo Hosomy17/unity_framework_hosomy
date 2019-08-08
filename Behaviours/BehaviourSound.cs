@@ -4,7 +4,7 @@ using System.Collections;
 public static class BehaviourSound
 {
 
-	public static void Play(GameObject gameObject, AudioClip audio)
+	public static void Play(AudioClip audio)
 	{
         AudioSource.PlayClipAtPoint(audio, Vector3.zero);
 	}

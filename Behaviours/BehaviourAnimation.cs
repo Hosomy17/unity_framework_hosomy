@@ -21,6 +21,11 @@ public static class BehaviourAnimation
         obj.GetComponent<Animator>().ResetTrigger(trg);
     }
 
+    public static void Float(GameObject obj, string flt, float val)
+    {
+        obj.GetComponent<Animator>().SetFloat(flt, val);
+    }
+
     public static void Flip(GameObject obj, Vector2 dir)
     {
         SpriteRenderer spr = obj.GetComponent<SpriteRenderer>();
